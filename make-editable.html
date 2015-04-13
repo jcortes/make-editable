@@ -1,0 +1,6 @@
+<div contenteditable="{{showEdit}}">
+    <style scoped src="app.css"></style>
+    <div ng-transclude></div>
+    <button ng-if="!showEdit" ng-click="enable()">Edit</button>
+    <button ng-if="showEdit" ng-click="disable()">Save</button>
+</div>
